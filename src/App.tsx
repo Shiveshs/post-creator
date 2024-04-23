@@ -1,7 +1,9 @@
 import "./App.css";
 
 function App() {
-  return <>Header Content Footer</>;
+  return <><p className="underline">
+  Hello world!
+</p></>;
 }
 
 export default App;
