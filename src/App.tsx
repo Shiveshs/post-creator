@@ -1,4 +1,5 @@
-import { Canvas, MeshProps } from "@react-three/fiber";
+import {useRef, useState} from 'react'
+import { Canvas, useFrame, MeshProps } from "@react-three/fiber";
 import { BoxGeometry, MeshStandardMaterial, Mesh } from "three";
 
 // Define props interface for your component
@@ -12,6 +13,11 @@ interface CustomMeshProps extends MeshProps {}
 
 // App component
 function App({}: AppProps) {
+
+  const meshRef = useRef();
+  const [hovered, setHover] = useState(false);
+  const [active, setActive] = useState(false);
+
   return (
     <Canvas>
       <mesh>
