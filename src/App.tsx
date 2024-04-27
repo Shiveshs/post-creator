@@ -1,6 +1,7 @@
 import {useRef, useState} from 'react'
 import { Canvas, useFrame, MeshProps } from "@react-three/fiber";
 import { BoxGeometry, MeshStandardMaterial, Mesh } from "three";
+import Box from './Box';
 
 // Define props interface for your component
 interface AppProps {}
@@ -14,16 +15,10 @@ interface CustomMeshProps extends MeshProps {}
 // App component
 function App({}: AppProps) {
 
-  const meshRef = useRef();
-  const [hovered, setHover] = useState(false);
-  const [active, setActive] = useState(false);
-
   return (
     <Canvas>
-      <mesh>
-        <boxGeometry args={[1, 1, 1]} /> {/* Correct JSX syntax for boxGeometry */}
-        <meshStandardMaterial /> {/* Correct JSX syntax for meshStandardMaterial */}
-      </mesh>
+      <Box position={[-2.2, 0, 0]} />
+      <Box position={[8.2, 0.2, 0.2]} />
     </Canvas>
   );
 }
