@@ -1,16 +1,14 @@
-import {useRef, useState} from 'react'
 import { Canvas, useFrame, MeshProps } from "@react-three/fiber";
-import { BoxGeometry, MeshStandardMaterial, Mesh } from "three";
 import Box from './Box';
 
 // Define props interface for your component
 interface AppProps {}
 
 // Define state interface if needed
-interface AppState {}
+// interface AppState {}
 
 // Define props for the Mesh component
-interface CustomMeshProps extends MeshProps {}
+// interface CustomMeshProps extends MeshProps {}
 
 // App component
 function App({}: AppProps) {
