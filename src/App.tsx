@@ -14,9 +14,9 @@ interface AppProps {}
 function App({}: AppProps) {
 
   return (
-    <div style={{top:"100px", left:"100px", position:"fixed"}}>
+    <div className="containerBox">
     <Canvas>
-      <ambientLight intensity={Math.PI/2}/>
+      <ambientLight intensity={Math.PI/8}/>
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
       <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
       <Box position={[-2.2, 0, 0]} />

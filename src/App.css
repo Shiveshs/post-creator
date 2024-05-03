@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.containerBox {
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 6px 20px 60px 24px;
+}

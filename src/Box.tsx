@@ -18,8 +18,8 @@ const Box = (props: ThreeElements['mesh']) => {
     onPointerOver={()=> setHover(true)}
     onPointerOut={()=> setHover(false)}
     >
-        <boxGeometry args={[1,1,1]} />
-        <meshStandardMaterial color={hovered ? 'green' : 'red'} />
+        <boxGeometry args={[2,2,2]} />
+        <meshStandardMaterial color={hovered ? 'hotpink' : 'red'} />
     </mesh>
   )
 }
